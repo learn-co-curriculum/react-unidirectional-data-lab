@@ -19,7 +19,7 @@ describe('<App />', function() {
   });
 
   describe('state.files', function() {
-    it('should be empty array', function() {
+    it('should be array with one empty string', function() {
       const wrapper = shallow(<App />);
       expect(wrapper.state('files')).toEqual(['']);
     });
